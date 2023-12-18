@@ -1,6 +1,7 @@
 # magic-link-tester-installer
 
 You can download the latest clickonce version here
+
 https://raw.githubusercontent.com/Microarea/magic-link-tester-installer/gh-pages/Installer/setup.exe
 
 Magic Link Tester   
