@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Test>
+	<Description>Sale orders, one get and one insert sample data</Description>
+	<Producer>Microarea</Producer>
+	<Action type="GetData" description="Get all customers with code 000%">
+		<UseApproximation>false</UseApproximation>
+		<Parameters>
+			<maxs:Customers tbNamespace="Document.ERP.CustomersSuppliers.Documents.Customers" xTechProfile="DefaultLight" xmlns:maxs="http://www.microarea.it/Schema/2004/Smart/ERP/CustomersSuppliers/Customers/Standard/DefaultLight.xsd">
+				<maxs:Parameters>
+					<maxs:DefaultDialog title="Fields search">
+						<maxs:DefaultGroup title="Search group">
+							<maxs:CustSuppType type="DataEnum">3211264</maxs:CustSuppType>
+							<maxs:CustSupp type="String">000%</maxs:CustSupp>
+						</maxs:DefaultGroup>
+					</maxs:DefaultDialog>
+				</maxs:Parameters>
+			</maxs:Customers>
+		</Parameters>
+	</Action>
+
+	<Action type="SetData" description="Insert Customer Prova 1, TaxIdNumber 12345678911">
+		<UseApproximation>false</UseApproximation>
+		<PostingAction>Insert</PostingAction>
+		<Data>
+			<maxs:Customers xmlns:maxs="http://www.microarea.it/Schema/2004/Smart/erp/customerssuppliers/Customers/Standard/DefaultLight.xsd" tbNamespace="Document.erp.customerssuppliers.documents.Customers" xTechProfile="DefaultLight">
+				<maxs:Data>
+					<CustomersSuppliers master="true">
+						<CustSuppType>3211264</CustSuppType>
+						<CompanyName>Prova 1</CompanyName>
+						<Address>Via di prova 1</Address>
+						<TaxIdNumber>12345678911</TaxIdNumber>
+						<ZIPCode>16152</ZIPCode>
+						<City>Genova</City>
+						<County>GE</County>
+						<Country></Country>
+						<Telephone1>010-123456</Telephone1>
+						<ISOCountryCode>IT</ISOCountryCode>
+						<NaturalPerson>false</NaturalPerson>
+						<Payment>RD</Payment>
+						<Currency>EUR</Currency>
+						<Disabled>false</Disabled>
+					</CustomersSuppliers>
+				</maxs:Data>
+			</maxs:Customers>
+		</Data>
+	</Action>
+</Test>
