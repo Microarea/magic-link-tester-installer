@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Test>
+  <Description>Sale orders, two gets and one insert sample data</Description>
+  <Producer>Microarea</Producer>
+  <Action type="GetData" description="Get from Sale Orders sample data, order 02/00001">
+    <UseApproximation>false</UseApproximation>
+    <Parameters>
+      <maxs:SaleOrd tbNamespace="Document.ERP.SaleOrders.Documents.SaleOrd" xTechProfile="DefaultLight" xmlns:maxs="http://www.microarea.it/Schema/2004/Smart/ERP/SaleOrders/SaleOrd/Standard/DefaultLight.xsd">
+        <maxs:Parameters>
+          <maxs:DefaultDialog title="Fields search">
+            <maxs:DefaultGroup title="Search group">
+              <maxs:InternalOrdNo type="String">02/00001</maxs:InternalOrdNo>
+            </maxs:DefaultGroup>
+          </maxs:DefaultDialog>
+        </maxs:Parameters>
+      </maxs:SaleOrd>
+    </Parameters>
+  </Action>
+
+  <Action type="GetData" description="Get from Sale Orders sample data, order 01/00008">
+    <UseApproximation>false</UseApproximation>
+    <Parameters>
+      <maxs:SaleOrd tbNamespace="Document.ERP.SaleOrders.Documents.SaleOrd" xTechProfile="DefaultLight" xmlns:maxs="http://www.microarea.it/Schema/2004/Smart/ERP/SaleOrders/SaleOrd/Standard/DefaultLight.xsd">
+        <maxs:Parameters>
+          <maxs:DefaultDialog title="Fields search">
+            <maxs:DefaultGroup title="Search group">
+              <maxs:InternalOrdNo type="String">01/00008</maxs:InternalOrdNo>
+            </maxs:DefaultGroup>
+          </maxs:DefaultDialog>
+        </maxs:Parameters>
+      </maxs:SaleOrd>
+    </Parameters>
+  </Action>
+
+ <Action type="SetData" description="Insert in SaleDocJE 08/00001, order date 2008-03-06">
+    <PostingAction>InsertUpdate</PostingAction>
+    <UseApproximation>false</UseApproximation>
+    <Data>
+      <maxs:SaleOrd tbNamespace="Document.ERP.SaleOrders.Documents.SaleOrd" xTechProfile="DefaultLight" xmlns:maxs="http://www.microarea.it/Schema/2004/Smart/ERP/SaleOrders/SaleOrd/Standard/DefaultLight.xsd">
+        <maxs:Data>
+          <maxs:SaleOrder master="true">
+            <maxs:InternalOrdNo>08/00001</maxs:InternalOrdNo>
+            <maxs:ExternalOrdNo>
+            </maxs:ExternalOrdNo>
+            <maxs:OrderDate>2008-03-06</maxs:OrderDate>
+            <maxs:ExpectedDeliveryDate>2008-03-06</maxs:ExpectedDeliveryDate>
+            <maxs:ConfirmedDeliveryDate>2008-03-06</maxs:ConfirmedDeliveryDate>
+            <maxs:Customer>0014</maxs:Customer>
+            <maxs:OurReference>
+            </maxs:OurReference>
+            <maxs:YourReference>
+            </maxs:YourReference>
+            <maxs:Payment>RBDF3</maxs:Payment>
+            <maxs:Currency>EUR</maxs:Currency>
+            <maxs:AreaManager>
+            </maxs:AreaManager>
+            <maxs:SaleOrdId>28</maxs:SaleOrdId>
+            <maxs:CompulsoryDeliveryDate>
+            </maxs:CompulsoryDeliveryDate>
+            <maxs:ShipToAddress>
+            </maxs:ShipToAddress>
+            <maxs:TBGuid>{62A03378-568A-4793-B3C8-0D6F919A33CE}</maxs:TBGuid>
+          </maxs:SaleOrder>
+          <maxs:Detail>
+            <maxs:DetailRow>
+              <maxs:Line>1</maxs:Line>
+              <maxs:Position>1</maxs:Position>
+              <maxs:LineType>3538947</maxs:LineType>
+              <maxs:Description>ACQUA</maxs:Description>
+              <maxs:Item>ACQUA</maxs:Item>
+              <maxs:UoM>LT</maxs:UoM>
+              <maxs:Qty>1.000000000000000</maxs:Qty>
+              <maxs:UnitValue>10.000000000000000</maxs:UnitValue>
+              <maxs:DiscountFormula>
+              </maxs:DiscountFormula>
+              <maxs:DiscountAmount>0.000000000000000</maxs:DiscountAmount>
+              <maxs:SaleOrdId>28</maxs:SaleOrdId>
+              <maxs:Notes>
+              </maxs:Notes>
+            </maxs:DetailRow>
+          </maxs:Detail>
+        </maxs:Data>
+      </maxs:SaleOrd>
+    </Data>
+  </Action>
+
+  <Action type="SetData" description="Delete from SaleDocJE 08/00001">
+    <PostingAction>Delete</PostingAction>
+    <UseApproximation>false</UseApproximation>
+    <Data>
+      <maxs:SaleOrd tbNamespace="Document.ERP.SaleOrders.Documents.SaleOrd" xTechProfile="DefaultLight" xmlns:maxs="http://www.microarea.it/Schema/2004/Smart/ERP/SaleOrders/SaleOrd/Standard/DefaultLight.xsd">
+        <maxs:Data>
+          <maxs:SaleOrder master="true">
+            <maxs:InternalOrdNo>08/00001</maxs:InternalOrdNo>
+            <maxs:ExternalOrdNo>
+            </maxs:ExternalOrdNo>
+            <maxs:OrderDate>2008-03-06</maxs:OrderDate>
+            <maxs:ExpectedDeliveryDate>2008-03-06</maxs:ExpectedDeliveryDate>
+            <maxs:ConfirmedDeliveryDate>2008-03-06</maxs:ConfirmedDeliveryDate>
+            <maxs:Customer>0014</maxs:Customer>
+            <maxs:OurReference>
+            </maxs:OurReference>
+            <maxs:YourReference>
+            </maxs:YourReference>
+            <maxs:Payment>RBDF3</maxs:Payment>
+            <maxs:Currency>EUR</maxs:Currency>
+            <maxs:AreaManager>
+            </maxs:AreaManager>
+            <maxs:SaleOrdId>28</maxs:SaleOrdId>
+            <maxs:CompulsoryDeliveryDate>
+            </maxs:CompulsoryDeliveryDate>
+            <maxs:ShipToAddress>
+            </maxs:ShipToAddress>
+            <maxs:TBGuid>{62A03378-568A-4793-B3C8-0D6F919A33CE}</maxs:TBGuid>
+          </maxs:SaleOrder>
+          <maxs:Detail>
+            <maxs:DetailRow>
+              <maxs:Line>1</maxs:Line>
+              <maxs:Position>1</maxs:Position>
+              <maxs:LineType>3538947</maxs:LineType>
+              <maxs:Description>ACQUA</maxs:Description>
+              <maxs:Item>ACQUA</maxs:Item>
+              <maxs:UoM>LT</maxs:UoM>
+              <maxs:Qty>1.000000000000000</maxs:Qty>
+              <maxs:UnitValue>10.000000000000000</maxs:UnitValue>
+              <maxs:DiscountFormula>
+              </maxs:DiscountFormula>
+              <maxs:DiscountAmount>0.000000000000000</maxs:DiscountAmount>
+              <maxs:SaleOrdId>28</maxs:SaleOrdId>
+              <maxs:Notes>
+              </maxs:Notes>
+            </maxs:DetailRow>
+          </maxs:Detail>
+        </maxs:Data>
+      </maxs:SaleOrd>
+    </Data>
+  </Action>
+  
+</Test>
+
+
+
