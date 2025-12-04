@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Test>
+  <Description>Sale orders, Inserimento e cancellazione</Description>
+   <Producer>Microarea</Producer>
+    <Action type="SetData" description="Insert in Sale Orders, order 01/00001, date 2001-01-16 (three rows on grid), must have warnings ">
+      <PostingAction>InsertUpdate</PostingAction>
+      <UseApproximation>false</UseApproximation>
+      <Data>
+        <maxs:SaleOrd tbNamespace="Document.ERP.SaleOrders.Documents.SaleOrd" xTechProfile="DefaultLight" xmlns:maxs="http://www.microarea.it/Schema/2004/Smart/ERP/SaleOrders/SaleOrd/Standard/DefaultLight.xsd">
+          <maxs:Data>
+            <maxs:SaleOrder master="true">
+              <maxs:InternalOrdNo>01/00001</maxs:InternalOrdNo>
+              <maxs:ExternalOrdNo>
+              </maxs:ExternalOrdNo>
+              <maxs:OrderDate>2001-01-16</maxs:OrderDate>
+              <maxs:ExpectedDeliveryDate>2001-01-19</maxs:ExpectedDeliveryDate>
+              <maxs:ConfirmedDeliveryDate>2001-01-16</maxs:ConfirmedDeliveryDate>
+              <maxs:Customer>0049</maxs:Customer>
+              <maxs:OurReference>
+              </maxs:OurReference>
+              <maxs:YourReference>
+              </maxs:YourReference>
+              <maxs:Payment>RBDF369</maxs:Payment>
+              <maxs:Currency>EUR</maxs:Currency>
+              <maxs:AreaManager>
+              </maxs:AreaManager>
+              <maxs:SaleOrdId>1</maxs:SaleOrdId>
+              <maxs:CompulsoryDeliveryDate>
+              </maxs:CompulsoryDeliveryDate>
+              <maxs:ShipToAddress>
+              </maxs:ShipToAddress>
+              <maxs:TBGuid>{00000000-0000-0000-0000-000000000000}</maxs:TBGuid>
+            </maxs:SaleOrder>
+            <maxs:Detail>
+              <maxs:DetailRow>
+                <maxs:Line>1</maxs:Line>
+                <maxs:Position>1</maxs:Position>
+                <maxs:LineType>3538947</maxs:LineType>
+                <maxs:Description>Birra Buona 33 cl vetro</maxs:Description>
+                <maxs:Item>BICO</maxs:Item>
+                <maxs:UoM>BT</maxs:UoM>
+                <maxs:Qty>140.000000000000000</maxs:Qty>
+                <maxs:UnitValue>0.645570000000000</maxs:UnitValue>
+                <maxs:DiscountFormula>3</maxs:DiscountFormula>
+                <maxs:DiscountAmount>0.674950000000000</maxs:DiscountAmount>
+                <maxs:SaleOrdId>1</maxs:SaleOrdId>
+                <maxs:Notes>
+                </maxs:Notes>
+              </maxs:DetailRow>
+              <maxs:DetailRow>
+                <maxs:Line>2</maxs:Line>
+                <maxs:Position>2</maxs:Position>
+                <maxs:LineType>3538947</maxs:LineType>
+                <maxs:Description>Acqua minerale</maxs:Description>
+                <maxs:Item>AM</maxs:Item>
+                <maxs:UoM>BT</maxs:UoM>
+                <maxs:Qty>20.000000000000000</maxs:Qty>
+                <maxs:UnitValue>0.857320000000000</maxs:UnitValue>
+                <maxs:DiscountFormula>
+                </maxs:DiscountFormula>
+                <maxs:DiscountAmount>0.000000000000000</maxs:DiscountAmount>
+                <maxs:SaleOrdId>1</maxs:SaleOrdId>
+                <maxs:Notes>
+                </maxs:Notes>
+              </maxs:DetailRow>
+              <maxs:DetailRow>
+                <maxs:Line>3</maxs:Line>
+                <maxs:Position>3</maxs:Position>
+                <maxs:LineType>3538947</maxs:LineType>
+                <maxs:Description>Near shampoo</maxs:Description>
+                <maxs:Item>LC22002</maxs:Item>
+                <maxs:UoM>NR</maxs:UoM>
+                <maxs:Qty>5.000000000000000</maxs:Qty>
+                <maxs:UnitValue>11.620279999999999</maxs:UnitValue>
+                <maxs:DiscountFormula>
+                </maxs:DiscountFormula>
+                <maxs:DiscountAmount>0.000000000000000</maxs:DiscountAmount>
+                <maxs:SaleOrdId>1</maxs:SaleOrdId>
+                <maxs:Notes>
+                </maxs:Notes>
+              </maxs:DetailRow>
+            </maxs:Detail>
+          </maxs:Data>
+        </maxs:SaleOrd>
+      </Data>
+    </Action>
+
+  <Action type="GetData" description="Get from Sale Orders, order 01/00001, date 2001-01-16 (three rows on grid)">
+    <UseApproximation>false</UseApproximation>
+    <Parameters>
+      <maxs:SaleOrd tbNamespace="Document.ERP.SaleOrders.Documents.SaleOrd" xTechProfile="Default" xmlns:maxs="http://www.microarea.it/Schema/2004/Smart/ERP/SaleOrders/SaleOrd/Standard/Default.xsd">
+        <maxs:Parameters>
+          <maxs:DefaultDialog title="Fields search">
+            <maxs:DefaultGroup title="Search group">
+              <maxs:InternalOrdNo type="String">01/00001</maxs:InternalOrdNo>
+            </maxs:DefaultGroup>
+          </maxs:DefaultDialog>
+        </maxs:Parameters>
+      </maxs:SaleOrd>
+    </Parameters>
+  </Action>
+</Test>
+
+
+
