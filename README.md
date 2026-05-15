@@ -2,7 +2,7 @@
 
 You can download the latest clickonce version here
 
-[https://raw.githubusercontent.com/Microarea/magic-link-tester-installer/gh-pages/Installer/setup.exe](https://raw.githubusercontent.com/Microarea/magic-link-tester-installer/gh-pages/setup.exe)
+https://raw.githubusercontent.com/Microarea/magic-link-tester-installer/gh-pages/setup.exe
 
 Magic Link Tester   
 La piattaforma Magiclink offre un metodo efficiente per accedere e sfruttare le risorse ERP attraverso l'uso di Web Services. I Web Services sono componenti di logica di programma accessibili tramite Internet o una connessione HTTP. Ciò significa che i fornitori di informazioni possono interagire tra loro senza preoccuparsi dei dettagli tecnici sottostanti, sia sul front-end che sul back-end.
